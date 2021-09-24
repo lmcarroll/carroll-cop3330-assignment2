@@ -19,7 +19,7 @@ public class App {
             int difficulty;
             Scanner input;
 
-            while(true) {
+            while (true) {
                 input = new Scanner(System.in);
                 try {
                     difficulty = input.nextInt();
