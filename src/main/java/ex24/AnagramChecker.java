@@ -8,7 +8,7 @@ package ex24;
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class App {
+public class AnagramChecker {
     public static boolean isAnagram(String str1, String str2) {
         str1 = str1.replaceAll("\\s", "");
         str2 = str2.replaceAll("\\s", "");
