@@ -7,7 +7,7 @@ package ex39;
 
 import java.util.Arrays;
 
-public class App {
+public class SortingRecords {
 
     static void printAlphabetical(Records[] arr) {
 

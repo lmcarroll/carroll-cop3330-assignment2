@@ -1,4 +1,9 @@
-package ex25;
+/*
+ *  UCF COP3330 Fall 2021 Assignment 2 Solution
+ *  Copyright 2021 Liam Carroll
+ */
+
+package ex24test;
 
 import ex24.AnagramChecker;
 import org.junit.Test;
@@ -9,7 +14,7 @@ public class AnagramCheckerTest {
 
     @Test
 
-    public void testIsAnagram(){
+    public void testIsAnagram() {
 
         AnagramChecker underTest = new AnagramChecker();
 

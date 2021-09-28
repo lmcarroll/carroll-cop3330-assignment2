@@ -9,7 +9,21 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.lang.Math;
 
-public class App {
+public class GuessTheNumberGame {
+
+    public static int generateTheNumber(int difficulty) {
+
+        int max = 1;
+        for (; difficulty >= 1; difficulty--) {
+            max *= 10;
+        }
+        int theNumber = 0;
+        while (theNumber == 0) {
+            theNumber = (int) Math.floor(Math.random() * (max + 1));
+        }
+        return theNumber;
+
+    }
 
     static void guessTheNumberGame() {
 
@@ -32,14 +46,9 @@ public class App {
                     System.out.println("Pardon?");
                 }
             }
-            int max = 1;
-            for (; difficulty >= 1; difficulty--) {
-                max *= 10;
-            }
-            int theNumber = 0;
-            while (theNumber == 0) {
-                theNumber = (int) Math.floor(Math.random() * (max + 1));
-            }
+
+            int theNumber = generateTheNumber(difficulty);
+
             System.out.print("I have my number. What's your guess? ");
             int guess = 0;
             int count = 0;

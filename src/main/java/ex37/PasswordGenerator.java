@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
 
-public class App {
+public class PasswordGenerator {
 
     static void generatePassword(int min, int special, int numbers) {
 

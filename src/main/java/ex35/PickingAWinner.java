@@ -8,7 +8,7 @@ package ex35;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class App {
+public class PickingAWinner {
 
     static void pickingAWinner() {
         ArrayList<String> contestants = new ArrayList<>();
@@ -22,7 +22,11 @@ public class App {
             contestants.add(name);
         }
 
-        System.out.println("The winner is... " + contestants.get((int) Math.floor(Math.random() * (contestants.size()))) + ".");
+        winnerPicker(contestants);
+    }
+
+    public static void winnerPicker(ArrayList arr) {
+        System.out.println("The winner is... " + arr.get((int) Math.floor(Math.random() * (arr.size()))) + ".");
     }
 
     public static void main(String[] args) {

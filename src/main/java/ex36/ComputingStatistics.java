@@ -8,9 +8,9 @@ package ex36;
 import java.util.Scanner;
 import java.lang.Math;
 
-public class App {
+public class ComputingStatistics {
 
-    static float average(float[] numbers, int i) {
+    public static float average(float[] numbers, int i) {
 
         float sum = 0;
 
@@ -21,7 +21,7 @@ public class App {
         return sum / (float) i;
     }
 
-    static float min(float[] numbers, int i) {
+    public static float min(float[] numbers, int i) {
 
         float minimum = numbers[0];
 
@@ -34,7 +34,7 @@ public class App {
         return minimum;
     }
 
-    static float max(float[] numbers, int i) {
+    public static float max(float[] numbers, int i) {
 
         float maximum = numbers[0];
 
@@ -47,7 +47,7 @@ public class App {
         return maximum;
     }
 
-    static float std(float[] numbers, int i) {
+    public static float std(float[] numbers, int i) {
 
         float sd = 0;
         float mean = average(numbers, i);

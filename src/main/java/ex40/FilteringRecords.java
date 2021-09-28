@@ -7,9 +7,9 @@ package ex40;
 
 import java.util.Scanner;
 
-public class App {
+public class FilteringRecords {
 
-    static int[] searcher(String[] str, String search) {
+    public static int[] searcher(String[] str, String search) {
 
         int[] matchIndex = new int[6];
 

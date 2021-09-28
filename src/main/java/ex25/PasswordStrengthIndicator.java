@@ -5,32 +5,9 @@
 
 package ex25;
 
-import java.util.Locale;
 import java.util.Scanner;
 
-class Password {
-    public int strRealNumCount(String str) {
-        int count = 0;
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) >= '0' & str.charAt(i) <= '9') {
-                count++;
-            }
-        }
-        return count;
-    }
-    public int strLetterCount(String str) {
-        int count = 0;
-        str = str.toLowerCase();
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) >= 'a' && str.charAt(i) <= 'z') {
-                count++;
-            }
-        }
-        return count;
-    }
-}
-
-public class App {
+public class PasswordStrengthIndicator {
 
     public static int passwordValidator(String str) {
 

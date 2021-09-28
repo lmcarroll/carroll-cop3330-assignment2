@@ -8,9 +8,9 @@ package ex38;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class App {
+public class FilteringValues {
 
-    static char[] filterEvenNumbers(char[] arr, int n) {
+    public static char[] filterEvenNumbers(char[] arr, int n) {
 
         char[] arr2 = new char[n];
         Arrays.fill(arr2, ' ');

@@ -7,8 +7,8 @@ package ex29;
 
 import java.util.Scanner;
 
-public class App {
-    static String badInput() {
+public class HandlingBadInput {
+   public static String badInput() {
         String rStr = "notDigit";
         Scanner input;
         int i;

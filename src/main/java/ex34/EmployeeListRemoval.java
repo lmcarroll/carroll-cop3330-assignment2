@@ -7,7 +7,7 @@ package ex34;
 
 import java.util.Scanner;
 
-public class App {
+public class EmployeeListRemoval {
 
     static String[] listRemover(String[] arr) {
 

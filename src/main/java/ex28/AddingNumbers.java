@@ -7,8 +7,10 @@ package ex28;
 
 import java.util.Scanner;
 
-public class App {
-    public static void main(String[] args) {
+public class AddingNumbers {
+
+    public static int addingNum() {
+
         Scanner input;
         int sum = 0;
 
@@ -17,6 +19,11 @@ public class App {
             input = new Scanner(System.in);
             sum += input.nextInt();
         }
-        System.out.println("The total is " + sum + ".");
+
+        return sum;
+    }
+    public static void main(String[] args) {
+
+        System.out.println("The total is " + addingNum() + ".");
     }
 }

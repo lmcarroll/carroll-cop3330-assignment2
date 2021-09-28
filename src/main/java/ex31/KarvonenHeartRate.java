@@ -7,7 +7,7 @@ package ex31;
 
 import java.util.Scanner;
 
-public class App {
+public class KarvonenHeartRate {
 
     static String badInput() {
         String rStr = "notDigit";

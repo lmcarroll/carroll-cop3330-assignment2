@@ -5,7 +5,7 @@
 
 package ex30;
 
-public class App {
+public class MultiplicationTable {
 
     public static void printMultiplicationChart() {
         int num;

@@ -8,7 +8,7 @@ package ex33;
 import java.util.Scanner;
 import java.lang.Math;
 
-public class App {
+public class Magic8Ball {
     static void magicEightBall() {
         String[] response = {"Yes.", "No.", "Ask again later."};
 

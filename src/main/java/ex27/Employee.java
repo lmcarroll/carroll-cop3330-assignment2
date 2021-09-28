@@ -5,9 +5,7 @@
 
 package ex27;
 
-import java.util.Scanner;
-
-class Employee {
+public class Employee {
     public String firstName;
     public String lastName;
     public String ZIP;
@@ -15,10 +13,10 @@ class Employee {
 
     public void validateInput(String firstName, String lastName, String ZIP, String ID) {
         if (
-        !validateFirstName(firstName) &
-        !validateLastName(lastName) &
-        !validateZIP(ZIP) &
-        !validateID(ID)) {
+                !validateFirstName(firstName) &
+                        !validateLastName(lastName) &
+                        !validateZIP(ZIP) &
+                        !validateID(ID)) {
             System.out.println("There were no errors found.");
         }
     }
@@ -66,40 +64,17 @@ class Employee {
 
     public boolean validateID(String ID) {
         if (
-            Character.isLetter(ID.charAt(0)) &&
-            Character.isLetter(ID.charAt(1)) &&
-            ID.charAt(2) == '-' &&
-            Character.isDigit(ID.charAt(3)) &&
-            Character.isDigit(ID.charAt(4)) &&
-            Character.isDigit(ID.charAt(5)) &&
-            Character.isDigit(ID.charAt(6))) {
+                Character.isLetter(ID.charAt(0)) &&
+                        Character.isLetter(ID.charAt(1)) &&
+                        ID.charAt(2) == '-' &&
+                        Character.isDigit(ID.charAt(3)) &&
+                        Character.isDigit(ID.charAt(4)) &&
+                        Character.isDigit(ID.charAt(5)) &&
+                        Character.isDigit(ID.charAt(6))) {
             return false;
         } else {
             System.out.println("The employee ID must be in the format AA-1234.");
             return true;
         }
-    }
-}
-public class App {
-    public static void main(String[] args) {
-        Employee employee = new Employee();
-
-        System.out.println("Enter the first name: ");
-        Scanner input = new Scanner(System.in);
-        employee.firstName = input.nextLine();
-
-        System.out.println("Enter the last name: ");
-        input = new Scanner(System.in);
-        employee.lastName = input.nextLine();
-
-        System.out.println("Enter the ZIP code: ");
-        input = new Scanner(System.in);
-        employee.ZIP = input.nextLine();
-
-        System.out.println("Enter the employee ID: ");
-        input = new Scanner(System.in);
-        employee.ID = input.nextLine();
-
-        employee.validateInput(employee.firstName, employee.lastName, employee.ZIP, employee.ID);
     }
 }
